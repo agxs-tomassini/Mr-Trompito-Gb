@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Mr. Trompito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/logoprincipal.png" alt="Mr. Trompito - Maquinaria y Fletes">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <i class="bi bi-list icono-abrir" aria-hidden="true"></i>
+                    <i class="bi bi-x-lg icono-cerrar" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./servicios.html">SERVICIOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section>
+        <h1>Nuestros Servicios</h1>
+        <p>Trabajamos con dos grandes líneas de servicio: alquiler de maquinaria para obras y también realizamos mudanzas y fletes.</p>
+    </section>
+    <section>
+        <h2>Alquiler de Maquinaria</h2>
+        <div class="contenedor-maquinaria">
+            <article class="tarjeta-maquinaria tarjeta-andamios">
+                <h3>Andamios</h3>
+                <figure>
+                    <img src="../assets/Andamios.jpg" alt="Cuerpo de andamio armado y listo para trabajos en altura">
+                </figure>
+                <p>Cuerpos de andamios listos para armar. Ideales para pintura, revoques, reparaciones de fachada o cualquier trabajo en altura.</p>
+                <div class="d-grid mt-3">
+                    <button type="button" class="boton-cotizar" data-bs-toggle="modal" data-bs-target="#modalCotizacion">Pedir cotización</button>
+                </div>
+            </article>
+            <article class="tarjeta-maquinaria tarjeta-hormigonera">
+                <h3>Hormigonera</h3>
+                <figure>
+                    <img src="../assets/Hormigonera.jpg" alt="Hormigonera eléctrica lista para ser utilizada en la obra">
+                </figure>
+                <p>Hormigonera eléctrica para preparar mezcla en la obra. Práctica para contrapisos, veredas y trabajos de albañilería.</p>
+                <div class="d-grid mt-3">
+                    <button type="button" class="boton-cotizar" data-bs-toggle="modal" data-bs-target="#modalCotizacion">Pedir cotización</button>
+                </div>
+            </article>
+            <article class="tarjeta-maquinaria tarjeta-martillo">
+                <h3>Martillo Mecánico</h3>
+                <figure>
+                    <img src="../assets/MartilloMecanico.jpg" alt="Martillo mecánico para trabajos de demolición y perforación">
+                </figure>
+                <p>Martillo mecánico para demolición, picado de paredes y pisos, y perforaciones en hormigón.</p>
+                <div class="d-grid mt-3">
+                    <button type="button" class="boton-cotizar" data-bs-toggle="modal" data-bs-target="#modalCotizacion">Pedir cotización</button>
+                </div>
+            </article>
+        </div>
+    </section>        
+    <section>
+        <h2>Mudanzas y Fletes</h2>
+        <p>Traslados de mobiliario, mercadería y cargas en general dentro de Buenos Aires:</p>
+        <ul class="listaTraslados">
+            <li>Mudanzas completas de hogar</li>
+            <li>Fletes chicos y grandes</li>
+            <li>Traslado de materiales de construcción</li>
+        </ul>
+        <figure>
+            <img src="../assets/Mudanza.jpg" alt="Equipo de personas realizando una mudanza de una localidad a otra">
+            <figcaption>Cuidamos cada traslado como si fuera propio.</figcaption>
+        </figure>
+    </section>
+</main>
+    <div class="modal fade modal-cotizacion" id="modalCotizacion" tabindex="-1" aria-labelledby="modalCotizacionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header" data-bs-theme="dark">
+                    <h2 class="modal-title" id="modalCotizacionLabel">Pedir cotización</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <form action="#" method="post" class="formulario-contacto">
+                    <div class="modal-body">
+                        <p>Completá tus datos y te enviamos la cotización sin compromiso.</p>
+
+                        <label for="cotEquipo">¿Qué equipo necesitás?</label>
+                        <select id="cotEquipo" name="equipo" required>
+                            <option value="" selected disabled>Elegí una opción</option>
+                            <option value="Andamios">Andamios</option>
+                            <option value="Hormigonera">Hormigonera</option>
+                            <option value="Martillo Mecánico">Martillo Mecánico</option>
+                            <option value="Herramientas varias">Herramientas varias</option>
+                        </select>
+
+                        <label for="cotNombre">Nombre y Apellido</label>
+                        <input type="text" id="cotNombre" name="nombre" placeholder="Juan Pérez" required>
+
+                        <label for="cotTelefono">Número de Teléfono</label>
+                        <input type="tel" id="cotTelefono" name="telefono" placeholder="+54 9 11 23345678" required>
+
+                        <label for="cotDias">Cantidad de días de alquiler</label>
+                        <input type="number" id="cotDias" name="dias" min="1" value="1" required>
+
+                        <label for="cotComentarios">Comentarios (opcional)</label>
+                        <textarea id="cotComentarios" name="comentarios" placeholder="Contanos dónde y cuándo lo necesitás"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="boton-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="boton-cotizar">Enviar consulta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>       
+        <nav>
+            <h2>SEGUINOS EN NUESTRAS REDES</h2>
+            <ul>
+                <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="linkFooter">
+                        <img src="../assets/Instagram.png" alt="Instagram" class="logoRedes"></a></li>
+                <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" class="linkFooter">
+                        <img src="../assets/Facebook.png" alt="Facebook" class="logoRedes"></a></li>
+                <li><a href="https://x.com" target="_blank" rel="noopener noreferrer" class="linkFooter">
+                    <img src="../assets/X.png" alt="X (Ex Twitter)" class="logoRedes"></a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Mr. Trompito. Todos los derechos reservados.</p>
+    </footer>
+        <a class="wsp-flotante" href="https://wa.me/5491123345678?text=Hola%20Mr.%20Trompito!%20Quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener noreferrer" aria-label="Cotizá por WhatsApp" title="Cotizá por WhatsApp">
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
